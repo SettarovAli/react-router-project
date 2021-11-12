@@ -23,8 +23,6 @@ const QuoteList = (props) => {
 
   const sortedQuotes = sortQuotes(props.quotes, isSortingAscending);
 
-  console.log(isSortingAscending);
-
   const changeSortingHandler = () => {
     navigate('?sort=' + (isSortingAscending ? 'desc' : 'asc'));
   };
